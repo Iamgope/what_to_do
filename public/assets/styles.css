@@ -13,6 +13,9 @@ body{
     box-sizing: border-box;
 
 }
+#fuck{
+    background: #e09993;
+}
 
 #todo-table form:after{
     margin: 0;
@@ -42,6 +45,8 @@ button{
     color: #fff;
     cursor:progress;
     font-size: 20px;
+    
+    
 }
 
 ul{
@@ -70,3 +75,18 @@ h1{
     margin-bottom: 0;
     text-indent: -10000px;
 }
+.woo-hoo{
+    display: inline-block;
+    padding: .5rem .8rem;
+    transition: all .2s ease-out;
+    display: flex;
+    flex-direction: column;
+    width: 10px;
+    height: auto;
+    position: relative;
+    background:#e09993;
+}
+.woo-hoo:hover{
+    background-color:red;
+}
+

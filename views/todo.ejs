@@ -5,10 +5,10 @@
             crossorigin="anonymous"></script>
     <link href="/assets/styles.css" rel="stylesheet" type="text/css"/>
     <script src="/assets/todo-list.js"></script>
- 
+    
   </head>
   <body>
-    <h1> my - app</h1>
+    <h1> myapp</h1>
     <div id="todo-table">
         <form action="/" method ="POST">
           <input type="text" name="item" placeholder="Add new item..." required />
@@ -17,7 +17,14 @@
 
         <ul>
           <% for(var i = 0; i < todos.length; i++) { %>
-              <li><%= todos[i].item %></li>  
+              <li>
+                <%= todos[i].item %>
+                <form action="/delete/<%=todos[i]._id %>" method="POST">
+                  <button class="woo-hoo"></button>
+               </form>
+            
+            </li>
+           
           <% } %>
         </ul>
         
