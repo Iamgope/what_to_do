@@ -4,7 +4,7 @@ const mongoose=require('mongoose');
 const Todolist=require('./models/todos');
 //const {MongoClient} = require('mongodb' );
 const app=express();
-const dbURI="mongodb+srv://Guru:1234@cluster0.rnblj.mongodb.net/todo-app?retryWrites=true&w=majority";
+const dbURI="mongodb+srv://<XXXX>.rnblj.mongodb.net/todo-app?retryWrites=true&w=majority";
 mongoose.connect(dbURI,{ useNewUrlParser: true,useUnifiedTopology:true,useFindAndModify:false})
 .then((result)=>app.listen(3000))
 .catch((err)=>console.log("error is",err));
